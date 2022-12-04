@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="182"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wY-C1-wNi">
+                    <rect key="frame" x="15" y="0.0" width="342" height="182"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42c-Qe-iHX">
+                            <rect key="frame" x="0.0" y="0.0" width="342" height="182"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="42c-Qe-iHX" secondAttribute="bottom" id="3Tr-Ye-4Zr"/>
+                        <constraint firstItem="42c-Qe-iHX" firstAttribute="leading" secondItem="0wY-C1-wNi" secondAttribute="leading" priority="800" id="QdE-YC-gM9"/>
+                        <constraint firstItem="42c-Qe-iHX" firstAttribute="top" secondItem="0wY-C1-wNi" secondAttribute="top" id="Uaj-9H-iiA"/>
+                        <constraint firstItem="42c-Qe-iHX" firstAttribute="centerY" secondItem="0wY-C1-wNi" secondAttribute="centerY" id="Ydt-4G-JY8"/>
+                        <constraint firstAttribute="trailing" secondItem="42c-Qe-iHX" secondAttribute="trailing" priority="250" id="aGj-xi-wsD"/>
+                        <constraint firstItem="42c-Qe-iHX" firstAttribute="centerX" secondItem="0wY-C1-wNi" secondAttribute="centerX" priority="300" id="sll-by-Yf1"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="sNs-5m-obB"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="MfX-Tw-srg"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="0wY-C1-wNi" secondAttribute="top" id="99Q-MO-AS1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0wY-C1-wNi" secondAttribute="bottom" id="BkW-hj-glf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0wY-C1-wNi" secondAttribute="trailing" priority="500" constant="21" id="TU0-dt-kDi"/>
+                <constraint firstItem="0wY-C1-wNi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" priority="500" constant="15" id="VMc-YO-f60"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="115.2" y="18.890554722638683"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
