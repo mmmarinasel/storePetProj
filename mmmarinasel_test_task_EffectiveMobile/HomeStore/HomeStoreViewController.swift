@@ -6,6 +6,7 @@ class HomeStoreViewController: UIViewController {
     
     private let viewModel = HomeStoreViewModel()
     
+    private var isAdded: Bool = false
     private let categoriesCellId: String = "categoriesCellId"
     private let headerId: String = "CollectionViewHeaderReusableView"
     
@@ -21,25 +22,38 @@ class HomeStoreViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.homeStoreCollectionView.collectionViewLayout = createLayout()
+//        self.homeStoreCollectionView.collectionViewLayout = createLayout()
+        buildView()
     }
-    
-    private func createLayout() -> UICollectionViewCompositionalLayout {
-        UICollectionViewCompositionalLayout { [weak self] sectionIndex, layoutEnvironment in
 
-            let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
-            let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .absolute(95), heightDimension: .absolute(95)), subitems: [item])
-            let section = NSCollectionLayoutSection(group: group)
-            section.orthogonalScrollingBehavior = .continuous
-            section.interGroupSpacing = 10
-            section.contentInsets = .init(top: 0, leading: 10, bottom: 30, trailing: 10)
-            guard let self = self else { return section }
-            section.boundarySupplementaryItems = [self.supplementaryHeaderItem()]
-            section.supplementaryContentInsetsReference = UIContentInsetsReference.none
-            return section
-        }
-    }
+//    private func createLayout() -> UICollectionViewCompositionalLayout {
+//        UICollectionViewCompositionalLayout { [weak self] sectionIndex, layoutEnvironment in
+//
+//            let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
+//            let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .absolute(95), heightDimension: .absolute(95)), subitems: [item])
+//            let section = NSCollectionLayoutSection(group: group)
+//            section.orthogonalScrollingBehavior = .continuous
+//            section.interGroupSpacing = 10
+//            section.contentInsets = .init(top: 0, leading: 10, bottom: 30, trailing: 10)
+//            guard let self = self else { return section }
+//            section.boundarySupplementaryItems = [self.supplementaryHeaderItem()]
+//            section.supplementaryContentInsetsReference = UIContentInsetsReference.none
+//            return section
+//        }
+//    }
     
+    func buildView() {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0,
+                                           left: 10,
+                                           bottom: 0,
+                                           right: 10)
+//        layout.itemSize = CGSize(width: self.view.frame.width,
+//                                 height: 95)
+        layout.itemSize = CGSize(width: self.view.frame.width, height: 188)
+        self.homeStoreCollectionView.collectionViewLayout = layout
+    }
+
     private func supplementaryHeaderItem() -> NSCollectionLayoutBoundarySupplementaryItem {
         .init(layoutSize: .init(widthDimension: .fractionalWidth(1),
                                 heightDimension: .estimated(50)),
@@ -57,7 +71,7 @@ extension HomeStoreViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
-        case 0: return self.viewModel.categories.value?.count ?? 0
+        case 0: /*return self.viewModel.categories.value?.count ?? 0 */ return 1
         case 1: return 0
         case 2: return 0
         default: return 0
@@ -69,11 +83,14 @@ extension HomeStoreViewController: UICollectionViewDataSource {
                                                             for: indexPath) as? CategoriesCollectionViewCell
         else { return CategoriesCollectionViewCell() }
 //        cell.backgroundColor = .systemPink
-        if let categCount = self.viewModel.categories.value?.count {
-            for _ in 0..<categCount {
-                cell.setup(category: self.viewModel.categories.value?[indexPath.row])
+        if let categCount = self.viewModel.categories.value?.count,
+           !self.isAdded {
+            cell.stackView.spacing = 23
+            for i in 0..<categCount {
+                cell.setup(category: self.viewModel.categories.value?[i])
             }
-            
+            self.isAdded = true
+//            cell.stackView.spacing = 23
         }
         return cell
     }
@@ -94,3 +111,14 @@ extension HomeStoreViewController: UICollectionViewDataSource {
 extension HomeStoreViewController: UICollectionViewDelegate {
     
 }
+
+
+//import SwiftUI
+//struct FlowProvider: PreviewProvider {
+//    static var previews: some View {
+//        
+//    }
+//    struct ContainerView: UIViewControllerRepresentable {
+//        let tabBar = 
+//    }
+//}

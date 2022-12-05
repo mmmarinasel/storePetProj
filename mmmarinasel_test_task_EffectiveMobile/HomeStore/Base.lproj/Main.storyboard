@@ -52,7 +52,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="413" height="209"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nS5-II-NND">
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS5-II-NND">
                                                     <rect key="frame" x="20" y="15" width="373" height="93"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOO-i2-4n4">
@@ -62,11 +62,11 @@
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="hOO-i2-4n4" secondAttribute="bottom" id="MrU-3z-Fbi"/>
                                                         <constraint firstItem="hOO-i2-4n4" firstAttribute="centerY" secondItem="nS5-II-NND" secondAttribute="centerY" id="OAT-eA-Hta"/>
-                                                        <constraint firstAttribute="trailing" secondItem="hOO-i2-4n4" secondAttribute="trailing" id="cX6-FO-cce"/>
-                                                        <constraint firstItem="hOO-i2-4n4" firstAttribute="centerX" secondItem="nS5-II-NND" secondAttribute="centerX" id="fLd-rX-yy1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hOO-i2-4n4" secondAttribute="trailing" priority="250" id="cX6-FO-cce"/>
+                                                        <constraint firstItem="hOO-i2-4n4" firstAttribute="centerX" secondItem="nS5-II-NND" secondAttribute="centerX" priority="300" id="fLd-rX-yy1"/>
                                                         <constraint firstAttribute="height" constant="93" id="jZy-3P-wXB"/>
                                                         <constraint firstItem="hOO-i2-4n4" firstAttribute="top" secondItem="nS5-II-NND" secondAttribute="top" id="nEh-mT-f02"/>
-                                                        <constraint firstItem="hOO-i2-4n4" firstAttribute="leading" secondItem="nS5-II-NND" secondAttribute="leading" id="u0A-Xm-bt6"/>
+                                                        <constraint firstItem="hOO-i2-4n4" firstAttribute="leading" secondItem="nS5-II-NND" secondAttribute="leading" priority="800" id="u0A-Xm-bt6"/>
                                                     </constraints>
                                                     <viewLayoutGuide key="contentLayoutGuide" id="mXU-Aa-0sI"/>
                                                     <viewLayoutGuide key="frameLayoutGuide" id="dmd-8m-L84"/>
@@ -92,10 +92,10 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="nS5-II-NND" secondAttribute="trailing" constant="20" id="5sq-rV-14m"/>
+                                                <constraint firstAttribute="trailing" secondItem="nS5-II-NND" secondAttribute="trailing" priority="500" constant="20" id="5sq-rV-14m"/>
                                                 <constraint firstItem="9Z9-Jz-Via" firstAttribute="centerY" secondItem="jma-R0-w93" secondAttribute="centerY" id="9tu-QB-J99"/>
                                                 <constraint firstAttribute="trailing" secondItem="9Z9-Jz-Via" secondAttribute="trailing" constant="37" id="JwT-V6-nYx"/>
-                                                <constraint firstItem="nS5-II-NND" firstAttribute="leading" secondItem="isX-xu-rgp" secondAttribute="leading" constant="20" id="L93-u6-W2w"/>
+                                                <constraint firstItem="nS5-II-NND" firstAttribute="leading" secondItem="isX-xu-rgp" secondAttribute="leading" priority="500" constant="20" id="L93-u6-W2w"/>
                                                 <constraint firstItem="jma-R0-w93" firstAttribute="leading" secondItem="isX-xu-rgp" secondAttribute="leading" constant="32" id="PiL-v3-htk"/>
                                                 <constraint firstItem="jma-R0-w93" firstAttribute="top" secondItem="nS5-II-NND" secondAttribute="bottom" constant="35" id="XfI-6n-nNk"/>
                                                 <constraint firstItem="9Z9-Jz-Via" firstAttribute="leading" secondItem="jma-R0-w93" secondAttribute="trailing" constant="11" id="nSA-xI-Kkt"/>
