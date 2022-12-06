@@ -7,6 +7,8 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var qrButton: UIButton!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    static var id: String = "categoriesCellId"
+    
     func setup(category: Category?) {
         guard let category = category else { return }
         let containerView = UIView()

@@ -19,7 +19,7 @@ struct Store: Codable {
 
 struct HotSalesItem: Codable {
     var id: Int
-    var isNew: Bool
+    var isNew: Bool?
     var title: String
     var subtitle: String
     var pictureUrl: String

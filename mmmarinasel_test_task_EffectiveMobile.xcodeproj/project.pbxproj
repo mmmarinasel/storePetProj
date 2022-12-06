@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41209133293E116A007BA542 /* HotSalesItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41209132293E116A007BA542 /* HotSalesItemCollectionViewCell.swift */; };
 		41F5FF2B293BA20200864DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5FF2A293BA20200864DAC /* AppDelegate.swift */; };
 		41F5FF2D293BA20200864DAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5FF2C293BA20200864DAC /* SceneDelegate.swift */; };
 		41F5FF2F293BA20200864DAC /* HomeStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5FF2E293BA20200864DAC /* HomeStoreViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41209132293E116A007BA542 /* HotSalesItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSalesItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		41F5FF27293BA20200864DAC /* mmmarinasel_test_task_EffectiveMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mmmarinasel_test_task_EffectiveMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F5FF2A293BA20200864DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41F5FF2C293BA20200864DAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				41F5FF51293CE7B800864DAC /* Cart */,
 				41F5FF50293CE78C00864DAC /* HomeStore */,
 				41F5FF46293BE45100864DAC /* BestSellerCollectionViewCell.swift */,
+				41209132293E116A007BA542 /* HotSalesItemCollectionViewCell.swift */,
 				41F5FF54293CEBFC00864DAC /* CategoriesCollectionViewCell.swift */,
 				41F5FF4A293BE80C00864DAC /* StoreCollectionReusableView.swift */,
 				41F5FF48293BE48900864DAC /* HotSalesHeaderView.xib */,
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41209133293E116A007BA542 /* HotSalesItemCollectionViewCell.swift in Sources */,
 				41F5FF4B293BE80C00864DAC /* StoreCollectionReusableView.swift in Sources */,
 				41F5FF2F293BA20200864DAC /* HomeStoreViewController.swift in Sources */,
 				41F5FF3F293BA34000864DAC /* CartModel.swift in Sources */,
