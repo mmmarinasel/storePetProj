@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		41209133293E116A007BA542 /* HotSalesItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41209132293E116A007BA542 /* HotSalesItemCollectionViewCell.swift */; };
+		4120913729408A27007BA542 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120913629408A27007BA542 /* CartViewController.swift */; };
+		4120913929408A35007BA542 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4120913829408A35007BA542 /* Cart.storyboard */; };
+		4120913B29409767007BA542 /* TabBarWithCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120913A29409767007BA542 /* TabBarWithCorners.swift */; };
+		4120913D2940B62D007BA542 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120913C2940B62C007BA542 /* FilterView.swift */; };
+		4120913F2940B70A007BA542 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4120913E2940B70A007BA542 /* FilterView.xib */; };
+		412091422941F1CF007BA542 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412091412941F1CE007BA542 /* TabBar.swift */; };
+		412091442941F5B6007BA542 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412091432941F5B6007BA542 /* TabButton.swift */; };
 		41F5FF2B293BA20200864DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5FF2A293BA20200864DAC /* AppDelegate.swift */; };
 		41F5FF2D293BA20200864DAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5FF2C293BA20200864DAC /* SceneDelegate.swift */; };
 		41F5FF2F293BA20200864DAC /* HomeStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5FF2E293BA20200864DAC /* HomeStoreViewController.swift */; };
@@ -28,6 +35,13 @@
 
 /* Begin PBXFileReference section */
 		41209132293E116A007BA542 /* HotSalesItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSalesItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		4120913629408A27007BA542 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		4120913829408A35007BA542 /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		4120913A29409767007BA542 /* TabBarWithCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWithCorners.swift; sourceTree = "<group>"; };
+		4120913C2940B62C007BA542 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		4120913E2940B70A007BA542 /* FilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
+		412091412941F1CE007BA542 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		412091432941F5B6007BA542 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 		41F5FF27293BA20200864DAC /* mmmarinasel_test_task_EffectiveMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mmmarinasel_test_task_EffectiveMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F5FF2A293BA20200864DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41F5FF2C293BA20200864DAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412091402940B728007BA542 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				4120913E2940B70A007BA542 /* FilterView.xib */,
+				4120913C2940B62C007BA542 /* FilterView.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		41F5FF1E293BA20200864DAC = {
 			isa = PBXGroup;
 			children = (
@@ -78,13 +101,15 @@
 		41F5FF29293BA20200864DAC /* mmmarinasel_test_task_EffectiveMobile */ = {
 			isa = PBXGroup;
 			children = (
-				41F5FF2A293BA20200864DAC /* AppDelegate.swift */,
 				41F5FF2C293BA20200864DAC /* SceneDelegate.swift */,
+				41F5FF2A293BA20200864DAC /* AppDelegate.swift */,
+				412091402940B728007BA542 /* Filter */,
 				41F5FF53293CE7F400864DAC /* Service */,
 				41F5FF52293CE7D700864DAC /* ProductDetails */,
 				41F5FF51293CE7B800864DAC /* Cart */,
 				41F5FF50293CE78C00864DAC /* HomeStore */,
 				41F5FF46293BE45100864DAC /* BestSellerCollectionViewCell.swift */,
+				4120913A29409767007BA542 /* TabBarWithCorners.swift */,
 				41209132293E116A007BA542 /* HotSalesItemCollectionViewCell.swift */,
 				41F5FF54293CEBFC00864DAC /* CategoriesCollectionViewCell.swift */,
 				41F5FF4A293BE80C00864DAC /* StoreCollectionReusableView.swift */,
@@ -92,6 +117,8 @@
 				41F5FF33293BA20A00864DAC /* Assets.xcassets */,
 				41F5FF35293BA20A00864DAC /* LaunchScreen.storyboard */,
 				41F5FF38293BA20A00864DAC /* Info.plist */,
+				412091412941F1CE007BA542 /* TabBar.swift */,
+				412091432941F5B6007BA542 /* TabButton.swift */,
 			);
 			path = mmmarinasel_test_task_EffectiveMobile;
 			sourceTree = "<group>";
@@ -111,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				41F5FF3E293BA34000864DAC /* CartModel.swift */,
+				4120913629408A27007BA542 /* CartViewController.swift */,
+				4120913829408A35007BA542 /* Cart.storyboard */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -192,7 +221,9 @@
 			files = (
 				41F5FF37293BA20A00864DAC /* LaunchScreen.storyboard in Resources */,
 				41F5FF34293BA20A00864DAC /* Assets.xcassets in Resources */,
+				4120913F2940B70A007BA542 /* FilterView.xib in Resources */,
 				41F5FF49293BE48900864DAC /* HotSalesHeaderView.xib in Resources */,
+				4120913929408A35007BA542 /* Cart.storyboard in Resources */,
 				41F5FF32293BA20200864DAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,15 +236,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				41209133293E116A007BA542 /* HotSalesItemCollectionViewCell.swift in Sources */,
+				4120913B29409767007BA542 /* TabBarWithCorners.swift in Sources */,
 				41F5FF4B293BE80C00864DAC /* StoreCollectionReusableView.swift in Sources */,
+				4120913729408A27007BA542 /* CartViewController.swift in Sources */,
 				41F5FF2F293BA20200864DAC /* HomeStoreViewController.swift in Sources */,
 				41F5FF3F293BA34000864DAC /* CartModel.swift in Sources */,
 				41F5FF41293BA36A00864DAC /* ProductDetailsModel.swift in Sources */,
+				412091422941F1CF007BA542 /* TabBar.swift in Sources */,
 				41F5FF45293BA3AB00864DAC /* NetworkManager.swift in Sources */,
+				412091442941F5B6007BA542 /* TabButton.swift in Sources */,
 				41F5FF4D293C9E3400864DAC /* HomeStoreViewModel.swift in Sources */,
 				41F5FF55293CEBFD00864DAC /* CategoriesCollectionViewCell.swift in Sources */,
 				41F5FF2B293BA20200864DAC /* AppDelegate.swift in Sources */,
 				41F5FF47293BE45100864DAC /* BestSellerCollectionViewCell.swift in Sources */,
+				4120913D2940B62D007BA542 /* FilterView.swift in Sources */,
 				41F5FF4F293CE45800864DAC /* Observable.swift in Sources */,
 				41F5FF2D293BA20200864DAC /* SceneDelegate.swift in Sources */,
 				41F5FF43293BA38900864DAC /* HomeStoreModel.swift in Sources */,

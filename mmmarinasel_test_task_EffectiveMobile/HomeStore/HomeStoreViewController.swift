@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 
 class HomeStoreViewController: UIViewController {
     
@@ -17,6 +18,19 @@ class HomeStoreViewController: UIViewController {
     }
     
     @IBOutlet weak var homeStoreCollectionView: UICollectionView!
+    
+    @IBAction func openFilterButton(_ sender: Any) {
+//        var filterView: FilterView = FilterView(frame: CGRect(x: 0,
+//                                                              y: self.view.frame.height * 0.6,
+//                                                              width: self.view.frame.width,
+//                                                              height: self.view.frame.height * 0.4))
+        print("filter should be opened")
+    }
+    
+
+    @IBSegueAction func presentTabBar(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: TabBar())
+    }
     
     private let viewModel = HomeStoreViewModel()
     private var isAdded: Bool = false
@@ -66,7 +80,7 @@ class HomeStoreViewController: UIViewController {
                                               heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: /*.absolute(188)*/.fractionalHeight(0.23))
+                                               heightDimension: /*.absolute(188)*/.fractionalHeight(0.25))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                        subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
