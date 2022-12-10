@@ -1,24 +1,14 @@
 import SwiftUI
 
 struct ItemCarousel: View {
-    let categoryName: String
+
+    var model: ProductDetailsViewModel = ProductDetailsViewModel()
+    
     var body: some View {
         VStack {
-            HStack {
-                Text(categoryName)
-                    .font(.system(size: 14, weight: .heavy))
-                    .padding(.vertical, 6)
-                    .padding(.horizontal, 12)
-                    .background(Color.pink)
-                    .foregroundColor(.white)
-                    .cornerRadius(2)
-                Spacer()
-            }.padding(.horizontal)
-            .padding(.top)
-            
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(alignment: .top, spacing: 16) {
-                    ForEach(1..<10) { i in
+                HStack(alignment: .top, spacing: 30) {
+                    ForEach(1..<4) { i in
                         GeometryReader { proxy in
                             let scale = getScale(proxy: proxy)
                             
@@ -34,16 +24,16 @@ struct ItemCarousel: View {
                                             .stroke(Color(white: 0.4))
                                         )
                                         .shadow(radius: 3)
-                                Text("Avenger")
-                                    .font(.system(size: 16, weight: .semibold))
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(.black)
+//                                Text("Avenger")
+//                                    .font(.system(size: 16, weight: .semibold))
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(.black)
                             }
                             .scaleEffect(.init(width: scale, height: scale))
                             .animation(.easeOut(duration: 1))
                             .padding(.vertical)
                         }
-                        .frame(width: 125, height: 400)
+                        .frame(width: 125, height: 330)
                         .padding(.horizontal, 32)
                         .padding(.vertical, 32)
                     }
@@ -71,6 +61,6 @@ struct ItemCarousel: View {
 
 struct ItemCarousel_Previews: PreviewProvider {
     static var previews: some View {
-        ItemCarousel(categoryName: "Samsung")
+        ItemCarousel()
     }
 }
