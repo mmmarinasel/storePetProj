@@ -20,6 +20,7 @@ class BestSellerCollectionViewCell: UICollectionViewCell {
         self.discountLabel.text = "$\(item.priceWithoutDiscount)"
 //        self.discountLabel.attributedText = 
         self.titleLabel.text = item.title
+        self.setFavoriteButton.layer.cornerRadius = self.setFavoriteButton.frame.width / 2
         if item.isFavorites {
             self.setFavoriteButton.setImage(UIImage(systemName: "heart.fill"),
                                             for: .normal)

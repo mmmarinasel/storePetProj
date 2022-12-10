@@ -41,7 +41,7 @@
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EMc-bW-VCH">
                                 <rect key="frame" x="0.0" y="51" width="414" height="613"/>
-                                <color key="backgroundColor" red="0.97254902119999997" green="0.97254902119999997" blue="0.97254914049999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yZB-2u-CXn">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="50" height="50"/>
@@ -108,6 +108,7 @@
                                                 <constraint firstItem="nS5-II-NND" firstAttribute="top" secondItem="isX-xu-rgp" secondAttribute="top" constant="15" id="s0k-wy-Y2G"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="413" height="188"/>
                                         <connections>
                                             <outlet property="qrButton" destination="9Z9-Jz-Via" id="9aD-KY-f3U"/>
@@ -186,6 +187,7 @@
                                                 <constraint firstItem="gWN-fH-dIV" firstAttribute="top" secondItem="8EH-ML-xHj" secondAttribute="top" constant="14" id="ySr-mr-YYH"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="414" height="170"/>
                                         <connections>
                                             <outlet property="addToCartButton" destination="89T-6n-VcI" id="jCH-2F-3om"/>
@@ -206,11 +208,12 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="165" height="133"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oot-K4-pKY">
-                                                    <rect key="frame" x="109.33333333333333" y="6" width="40.666666666666671" height="25"/>
+                                                    <rect key="frame" x="125" y="6" width="25" height="25"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="ICA-xO-m59"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="VR2-1X-fBH"/>
+                                                        <constraint firstAttribute="width" secondItem="Oot-K4-pKY" secondAttribute="height" multiplier="1:1" id="kAf-Hz-kTR"/>
                                                     </constraints>
                                                     <color key="tintColor" red="1" green="0.43175846340000001" blue="0.30402132869999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="Button"/>
@@ -238,6 +241,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Oot-K4-pKY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wbZ-Ob-O8s" secondAttribute="leading" constant="20" symbolic="YES" id="1PK-fY-VTy"/>
                                                 <constraint firstItem="VOv-KG-KrO" firstAttribute="leading" secondItem="5NP-BH-z8U" secondAttribute="trailing" constant="7" id="20e-zU-dbz"/>
                                                 <constraint firstAttribute="trailing" secondItem="5iM-mf-fts" secondAttribute="trailing" id="5ag-jR-u0H"/>
                                                 <constraint firstItem="5iM-mf-fts" firstAttribute="leading" secondItem="wbZ-Ob-O8s" secondAttribute="leading" id="MeK-BL-ViX"/>
@@ -282,6 +286,7 @@
                                             </buttonConfiguration>
                                         </button>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="gUA-Cc-VKS" secondAttribute="trailing" constant="2" id="0HB-D1-1JJ"/>
                                         <constraint firstItem="sqU-rf-CHa" firstAttribute="centerY" secondItem="gUA-Cc-VKS" secondAttribute="centerY" id="7xh-s3-N3N"/>
@@ -300,13 +305,14 @@
                             </collectionView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihA-HV-ImQ">
                                 <rect key="frame" x="0.0" y="664" width="414" height="72"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="ubD-jg-POq" kind="embed" destinationCreationSelector="presentTabBar:" id="c57-SW-qgl"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.97254902119999997" green="0.97254902119999997" blue="0.97254914049999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EMc-bW-VCH" secondAttribute="trailing" id="11F-W3-w8W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ihA-HV-ImQ" secondAttribute="trailing" id="1nT-9q-KTz"/>
