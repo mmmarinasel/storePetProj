@@ -22,12 +22,8 @@ struct ItemCarousel: View {
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 8)
                                             .stroke(Color(white: 0.4))
-                                        )
-                                        .shadow(radius: 3)
-//                                Text("Avenger")
-//                                    .font(.system(size: 16, weight: .semibold))
-//                                    .multilineTextAlignment(.center)
-//                                    .foregroundColor(.black)
+                                    )
+                                    .shadow(radius: 3)
                             }
                             .scaleEffect(.init(width: scale, height: scale))
                             .animation(.easeOut(duration: 1))

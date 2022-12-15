@@ -1,26 +1,33 @@
 import SwiftUI
 
-struct ProductDescription: View {
-
+struct CartView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(spacing: 7) {
-                    ItemCarousel()
-                    DescriptionView()
+                VStack(alignment: .leading, spacing: 7) {
+                    Text("My Cart")
+                        .fontWeight(.bold)
+                        .font(.title)
+                    ItemsView()
                 }
             }
             .background(Color("wh"))
-            .navigationTitle("Product Details")
-            .navigationBarTitleDisplayMode(.inline)
+//            .navigationTitle("My Cart")
+//            .navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode.automatic)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         print("to cart")
                     }) {
-                        Image("bag_icon")
-                            .background(Color("orange"))
-                            .cornerRadius(10)
+                        HStack {
+                            Text("Add address")
+                                .foregroundColor(.black)
+                                .font(Font.caption)
+                                .padding(.trailing, 9)
+                            Image("location_icon37")
+                                .background(Color("orange"))
+                                .cornerRadius(10)
+                        }
                     }
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -38,8 +45,8 @@ struct ProductDescription: View {
     }
 }
 
-struct ProductDescription_Previews: PreviewProvider {
+struct CartView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDescription()
+        CartView()
     }
 }
